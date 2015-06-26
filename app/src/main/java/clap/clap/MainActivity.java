@@ -164,10 +164,6 @@ public class MainActivity extends Activity {
                     // short sound, count
                     //Log.i("ClapWorker.Output", "Clap counted");
                     incrementClap();
-                } else if (peakDuration > 3 * CLAP_MAX_DURATION) {
-                    // long sound, reset
-                    //Log.i("ClapWorker.Output", "Long sound, reset");
-                    resetCount();
                 }
                 //Log.d("ClapWorker.Input", "End of peak reached energy " + energy + " duration " + peakDuration);
                 _peakOriginEnergy = 0;
